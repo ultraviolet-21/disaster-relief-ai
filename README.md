@@ -1,10 +1,6 @@
 # disaster-relief-ai
 Inspirit AI project AI for Disaster Relief
 
-In 2022, I participated in the Inspirit AI Scholars program. As part of that program, I worked on the project
-AI for Disaster Relief. This project uses Python and sklearn to analyze data (in this case, tweets) in the 
-aftermath of a disaster. We encoded the tweets using one-hot encoding and used logistic regression to determine 
-how similar the words in one tweet were to another. We divided the tweets into four categories: food, water,
-energy, and medical. For this, we used specific keywords, and logistic regression helped to identify words that
-might be similar to them. By classifying these tweets into categories, we can simplify disaster relief efforts 
-because it's easy to determine what people need the most.
+In 2022, I participated in the Inspirit AI Scholars program. As part of that program, I worked on the project AI for Disaster Relief. This project uses Python and sklearn to analyze data (in this case, tweets) in the aftermath of a disaster. We encoded the tweets using one-hot encoding and used logistic regression to determine how similar the words in one tweet were to another. We divided the tweets into four categories: food, water, energy, and medical. For this, we used specific keywords, and logistic regression helped to identify words that might be similar to them. By classifying these tweets into categories, we can simplify disaster relief efforts because it's easy to determine what people need the most.
+
+One way I can reimplement this program is by using large language models. LLMs require less preprocessing, especially since this program uses tweets (280 characters max). I will use the OpenAI API and provide an instruction to determine the type of aid an individual needs based on the tweet. I can do this by assigning numerical values to each category, including 0 for someone who doesn't need anything. The LLM will analyze the words and tone of the tweet and compare it with a database of similar tweets and their values. This will allow it to classify the tweets. An LLM is more effective at identifying the tone, which will help it determine whether or not someone really needs supplies. This will streamline limited resources to people in need.
